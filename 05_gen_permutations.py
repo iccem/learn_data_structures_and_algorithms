@@ -18,6 +18,8 @@ def generate_number(N:int, M:int, prefix=None):
         
         
 def gen_bin(M, prefix=''):
+    print('M: ', M)
+    print('prefix: ', prefix)
     if M == 0:
         print(prefix)
         return
@@ -65,5 +67,5 @@ def test_func(some_func):
 if __name__ == '__main__':
     # test_func(generate_numbers)
     # generate_number(3, 3)
-    # gen_bin(5)
-    generate_permutations(5)
+    gen_bin(3)
+    # generate_permutations(3, 2)
