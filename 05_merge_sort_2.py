@@ -31,9 +31,8 @@ def merge(A: list, B: list):
 def merge_sort(A):
     if len(A) <= 1:
         return
-    middle = len(A)//2
-    L = [A[i] for i in range(0, middle)]
-    R = [A[i] for i in range(middle, len(A))]
+    L = A[:len(A)//2]
+    R = A[len(A)//2:]
     merge_sort(L)
     merge_sort(R)
     C = merge(L, R)
