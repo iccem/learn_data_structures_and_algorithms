@@ -44,8 +44,17 @@ def levenstein(A, B):
     return F[len(A)][len(B)]
 
 
-# Проверка равенства строк
+# Проверка равенства строк O(N)
+def equal(A, B):
+    if len(A) != len(B):
+        return False
+    for i in range(len(A)):
+        if A[i] != B[i]:
+            return False
+    return True
 
+
+# Вероятный способ проверки строк (20%)
 
 
 A = 'Проверка'
