@@ -1,5 +1,5 @@
 from multiprocessing.sharedctypes import Value
-
+# Псевдокод
 
 class TreeNode:
     def __init__(self, value) -> None:
