@@ -37,6 +37,8 @@ def array_search(A:list, N:int, x:int):
     или -1, если такого нет.
     Если в массиве несколько одинаковых
     элементов х, вернуть индекс первого по счету.
+    
+    Массив А длины N, целое число x.
     '''
     for k in range(N):
         if A[k] == x:
@@ -46,6 +48,7 @@ def array_search(A:list, N:int, x:int):
 def test_array_search():
     A1 = [1, 2, 3, 4, 5]
     m = array_search(A1, 5, 8)
+    print("case: в массиве нет искомого элемента")
     if m == -1:
         print('#test1 - ok')
     else:
@@ -53,6 +56,7 @@ def test_array_search():
         
     A2 = [-1, -2, -3, -4, -5]
     m = array_search(A2, 5, -3)
+    print("case: в массиве есть искомый элемент и функция возвращает верный индекс")
     if m == 2:
         print('#test2 - ok')
     else:
@@ -60,12 +64,13 @@ def test_array_search():
         
     A3 = [10, 20, 30, 10, 10]
     m = array_search(A3, 5, 10)
+    print("case: в массиве есть несколько искомых элементов")
     if m == 0:
         print('#test3 - ok')
     else:
         print('#test3 - fail')
         
-# test_array_search()
+test_array_search()
 
 
 # Обращение массива
