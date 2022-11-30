@@ -3,7 +3,7 @@
 # массив частот frequency
 
 def count_sort(A):
-    ''' Сортировка массива чисел методом подсчета. O(N).
+    ''' Сортировка массива чисел методом подсчета. Сложность: O(N).
     O(M) -  по памяти, где M - число различных элементов.
     Быстро сортирует большие объемы информации.
     Нам должен быть известет диапазон частот и он должен быть небольшим.'''
@@ -12,7 +12,10 @@ def count_sort(A):
     for i in range(N):
         x = int(input())
         F[x] += 1
-    print(F)
+    # print(F)
+    for j in range(len(F)):
+        c = F[j]
+        print(F[j] * c, end=' ')
 
 def test_count_sort(sort_algorithm):
     print('testcase #1: ', end='')
