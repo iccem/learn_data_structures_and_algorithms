@@ -1,5 +1,8 @@
 import random
-from datetime import datetime, time
+
+'''
+Сортировка слиянием.
+'''
 
 def merge(A: list, B: list):
     C = [0] * (len(A) + len(B))
