@@ -1,10 +1,10 @@
 import random
 
-'''
-Сортировка слиянием.
-'''
 
-def merge(A: list, B: list):
+def merge(A: list, B: list) -> list:
+    '''
+    Сортировка слиянием. Merge sort.
+    '''
     C = [0] * (len(A) + len(B))
     i = k = n = 0
     while i < len(A) and k < len(B):
@@ -31,7 +31,7 @@ def merge(A: list, B: list):
 
 
 # Рекурсивная функция
-def merge_sort(A):
+def merge_sort(A: list) -> list:
     if len(A) <= 1:
         return
     middle = len(A)//2
@@ -44,10 +44,10 @@ def merge_sort(A):
         A[i] = C[i]
 
 
-def get_randomlist(n, m):
+def get_randomlist(n: int, m: int) -> list:
     '''
-    Создаем массив длиной n,
-    содержащий произвольный набор целых чисел
+    Создает массив длиной n,
+    содержащий набор целых чисел
     в диапазоне от 0 до m.
     '''
     randomlist = []
@@ -58,7 +58,7 @@ def get_randomlist(n, m):
 
 
 if __name__ == '__main__':
-    A = get_randomlist(11, 10)
+    A = get_randomlist(8, 110)
     print(*A)
     merge_sort(A)
     print(*A)
