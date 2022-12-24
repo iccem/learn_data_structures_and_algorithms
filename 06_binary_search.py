@@ -3,6 +3,7 @@
 массив должен быть отсортирован.
 '''
 
+
 def left_bound(A:list, key:int):
     left = -1
     right = len(A)
@@ -14,6 +15,7 @@ def left_bound(A:list, key:int):
             right = middle
     return left
 
+
 def right_bound(A:list, key:int):
     left = -1
     right = len(A)
@@ -24,6 +26,7 @@ def right_bound(A:list, key:int):
         else:
             right = middle
     return right
+
 
 A = [1, 3, 3, 6, 7, 9]
 key = 2
