@@ -32,18 +32,19 @@ C = A # второе имя того же объекта
 def array_search(A:list, N:int, x:int):
     '''
     Осуществляет поиск числа x в массиве A 
-    от 0 до N-1 включительно.
-    Возвращает индекс элемента x в массиве А,
+    длинны N от 0 до N-1 включительно.
+    Возвращает индекс элемента x в массиве А
     или -1, если такого нет.
     Если в массиве несколько одинаковых
     элементов х, вернуть индекс первого по счету.
     
-    Массив А длины N, целое число x.
+    Массив А длины N, x -- целое число.
     '''
     for k in range(N):
         if A[k] == x:
             return k
     return -1
+
 
 def test_array_search():
     A1 = [1, 2, 3, 4, 5]
@@ -69,6 +70,7 @@ def test_array_search():
         print('#test3 - ok')
     else:
         print('#test3 - fail')
+        
         
 test_array_search()
 
@@ -106,7 +108,9 @@ def test_invert_array():
     else:
         print('#test2 - fail')
 
+
 # test_invert_array()
+
 
 # Циклический сдвиг в массиве
 def circular_shift(A:list):
