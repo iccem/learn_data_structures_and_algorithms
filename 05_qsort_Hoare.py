@@ -25,9 +25,9 @@ def hoare_sort(A: list):
         
         
 def check_sorted(A, assending=True):
-    '''
+    """
     Проверка отсортированости за О(len(A)=O(n))
-    '''
+    """
     flg = True
     N = len(A)
     s = 2 * int(assending)-1

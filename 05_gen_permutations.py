@@ -2,11 +2,11 @@
 # рекурентный способ
 
 def generate_number(N:int, M:int, prefix=None):
-    '''
+    """
     Генерирует все числа с лидирующими нулями
     в N-ричной системе счисления (N <= 10)
     длины М.
-    ''' 
+    """
     if M == 0:
         print(prefix)
         return 
@@ -28,10 +28,10 @@ def gen_bin(M, prefix=''):
 
 
 def find(number, A):
-    '''
+    """
     Ищет x в А и возвращает True, если такой есть
     False, если такого нет.
-    '''
+    """
     for x in A:
         if number == x:
             return True
@@ -39,10 +39,10 @@ def find(number, A):
 
 
 def generate_permutations(N:int, M:int=-1, prefix=None):
-    '''
+    """
     Генерация всех перестановок N чисел в M позициях,
     в префиксом prefix.
-    '''
+    """
     # if M == -1:
     #     M = N # по умолчанию N чисел в N позициях
     M = N if M == -1 else M # по умолчанию N чисел в N позициях

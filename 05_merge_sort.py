@@ -2,9 +2,9 @@ import random
 
 
 def merge(A: list, B: list) -> list:
-    '''
+    """
     Сортировка слиянием. Merge sort.
-    '''
+    """
     C = [0] * (len(A) + len(B))
     i = k = n = 0
     while i < len(A) and k < len(B):
@@ -45,11 +45,11 @@ def merge_sort(A: list) -> list:
 
 
 def get_randomlist(n: int, m: int) -> list:
-    '''
+    """
     Создает массив длиной n,
     содержащий набор целых чисел
     в диапазоне от 0 до m.
-    '''
+    """
     randomlist = []
     for i in range(0, n):
         n = random.randint(1, m)
