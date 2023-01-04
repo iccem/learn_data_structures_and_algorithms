@@ -1,9 +1,10 @@
-s = input().lower().split()
-d = {}
+class Someone:
+    a = 0
+    
+    def func(self):
+        a = 1
+        
+b = Someone()
 
-for i in s:
-    if i in d:
-        d[i] += 1
-    elif i not in d:
-        d[i] = 1
-
+print('-'* 20)
+print(f'print: {b.a}')

@@ -4,8 +4,7 @@
 если шагать можно только 
 вправо и вниз
 (не по диагонали)
-'''
-'''
+
 1) Строим рекуерентно задачу
 Knm - клетка строка и номер элемента в строке
 количество способов достичь клетки (N, M)
@@ -88,7 +87,7 @@ Fi0 = 0
 '''
 
 
-# large common subsequence
+# Large Common Subsequence
 def lcs(A, B):
     F = [[0]*(len(B)+1) for i in range(len(A)+1)]
     for i in range(1, len(A)+1):
